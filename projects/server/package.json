@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node out/index.js",
     "build": "tsc",
-    "dev": "nodemon index.ts"
+    "dev": "nodemon index.ts",
+    "generate":"npx prisma db pull --schema=./prisma/schema.prisma"
   },
   "keywords": [],
   "author": "",
