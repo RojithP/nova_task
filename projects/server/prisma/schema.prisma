@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = "mysql://root:Abp1972@@localhost:3306/nova"
+  url      =  env("DATABASE_URL")
 }
 
 model user {
